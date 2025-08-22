@@ -9,7 +9,7 @@ import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
-import static com.immigration.rcs.kafka.KafkaConstants.ICGI;
+import static com.immigration.rcs.kafka.KafkaConstants.RCS;
 import static com.immigration.rcs.kafka.KafkaConstants.SYS_LOGS_TOPIC;
 
 @Component
@@ -22,7 +22,7 @@ public class KafkaConsumerService {
     @Autowired
     private KafkaProducerService kafkaProducerService;
 
-    @KafkaListener(topics = SYS_LOGS_TOPIC, groupId = ICGI)
+    @KafkaListener(topics = SYS_LOGS_TOPIC, groupId = RCS)
     public void consumeSysLogs(@Payload String payload, Acknowledgment acknowledgment) {
         SysLog sysLog = gson.fromJson(payload, SysLog.class);
         System.out.println(sysLog.getSourceId());

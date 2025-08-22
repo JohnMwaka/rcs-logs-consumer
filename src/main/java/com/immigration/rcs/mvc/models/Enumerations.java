@@ -6,7 +6,7 @@ public class Enumerations {
 
     @Getter
     public enum Source {
-        API("API"), BILL("BILL"), GEPG("GePG"), RCS("RCS System");
+        API("API"), BILL("New Bill"), GEPG("GePG"), RCS("RCS System");
         private final String value;
 
         Source(String value) {

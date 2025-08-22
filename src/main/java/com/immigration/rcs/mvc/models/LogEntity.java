@@ -46,8 +46,6 @@ public abstract class LogEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String sourceId;
-    private long applicationId;
-    private String controlNumber;
     @Enumerated(EnumType.STRING)
     private Enumerations.Source source;
     @Enumerated(EnumType.STRING)
