@@ -41,7 +41,7 @@ public class SysLogService {
             }
             if (!sysLog.getSource().equals(Enumerations.Source.RCS)) {
                 switch (sysLog.getSource()) {
-                    case BILL, BILL_REUSE, BILL_CANCELLATION, BILL_CHANGE, RECONCILIATION, GEPG -> {
+                    case BILL, BILL_REUSE, BILL_CANCELLATION, BILL_CHANGE, RECONCILIATION, PAYMENT -> {
                         if (sysLog.getStatus().equals(Enumerations.Status.QUEUED)) {
                             producerService.save(sysLog);
                         } else {
