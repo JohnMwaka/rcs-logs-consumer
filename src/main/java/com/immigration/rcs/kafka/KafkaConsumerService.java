@@ -28,7 +28,6 @@ public class KafkaConsumerService {
         System.out.println(sysLog.getSourceId());
         System.out.println(sysLog.getSource());
         sysLogService.save(sysLog);
-//        kafkaProducerService.updateUI();
         acknowledgment.acknowledge();
     }
 }
