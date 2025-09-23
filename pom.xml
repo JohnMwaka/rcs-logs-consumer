@@ -8,9 +8,9 @@
 		<version>4.0.0-M2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.immigration</groupId>
-	<artifactId>rcs</artifactId>
-	<version>1,0</version>
+	<groupId>tz.go.immigration</groupId>
+	<artifactId>rcs-logs</artifactId>
+	<version>1.0</version>
 	<name>rcs</name>
 	<description>RCS service for writing logs</description>
 	<url/>

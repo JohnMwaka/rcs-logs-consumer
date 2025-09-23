@@ -46,9 +46,9 @@ public abstract class LogEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String sourceId;
-    @Enumerated(EnumType.STRING)
+    @Convert(converter = SourceConverter.class)
     private Enumerations.Source source;
-    @Enumerated(EnumType.STRING)
+    @Convert(converter = StatusConverter.class)
     private Enumerations.Status status;
     @CreationTimestamp
     private Timestamp createdAt;
