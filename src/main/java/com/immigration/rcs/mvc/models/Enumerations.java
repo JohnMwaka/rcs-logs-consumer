@@ -6,7 +6,7 @@ public class Enumerations {
 
     @Getter
     public enum Source {
-        API("API"), API_CALLBACK("API Callback"), BILL("New Bill"), BILL_REUSE("Bill Reuse"), BILL_CANCELLATION("Bill Cancellation"), RECONCILIATION("Reconciliation"), BILL_CHANGE("Bill Change"), PAYMENT("GePG Payment"), RCS_BILLS("RCS Bills System"),
+        API("API"), API_CALLBACK("API Callback"), BILL("New Bill"), BILL_REUSE("Bill Reuse"), BILL_CANCELLATION("Bill Cancellation"), RECONCILIATION("Reconciliation"), BILL_CHANGE("Bill Change"), PAYMENT("GePG Payment"), RCS_BILLS("RCS Bills System"), BILL_CALLBACK("Bill Callback"), RECONCILIATION_CALLBACK("Reconciliation Callback"),
         RCS_CONTROL_NUMBERS("RCS Control Numbers System"),
         RCS_PAYMENTS("RCS Payments System"),
         ;
