@@ -43,7 +43,7 @@ public class SysLogService {
                 switch (sysLog.getSource()) {
                     case BILL, BILL_REUSE, BILL_CANCELLATION, BILL_CHANGE, RECONCILIATION, PAYMENT, BILL_CALLBACK,
                          RECONCILIATION_CALLBACK, RCS_BILL_CALLBACK, RCS_BILL_CHANGE_CALLBACK, RCS_BILL_REUSE_CALLBACK,
-                         RCS_BILL_CANCELLATION_CALLBACK -> {
+                         RCS_BILL_CANCELLATION_CALLBACK, CHECK_CONTROL_NUMBER, CHECK_PAYMENT -> {
                         if (sysLog.getStatus().equals(Enumerations.Status.QUEUED)) {
                             producerService.save(sysLog);
                         } else {
